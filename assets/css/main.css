@@ -57,7 +57,8 @@
 	.language-select a{
 	  cursor: pointer;
 		-webkit-align-items: flex-start;
-	  text-decoration: none;}
+	  text-decoration: none;
+	}
 
 .language-select ul{
 		  cursor: pointer;
