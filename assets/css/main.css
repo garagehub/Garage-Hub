@@ -52,7 +52,7 @@
 .language-select {
   cursor: pointer;
 	-webkit-align-items: flex-start;
-	text-decoration: none;}
+	text-decoration: underline none;}
 
 	*, *:before, *:after {
 		-moz-box-sizing: border-box;
