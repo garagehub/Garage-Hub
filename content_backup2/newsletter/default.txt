@@ -1,0 +1,33 @@
+Textcolor: #ffffff
+
+----
+
+Pagecolor: #2d9ee0
+
+----
+
+Title: Newsletter
+
+----
+
+Subtitle: Sign up for our newsletter
+
+----
+
+Intro: 
+
+----
+
+Text: 
+
+----
+
+Heroimage: 
+
+----
+
+Layout: three-col
+
+----
+
+Videolink: 

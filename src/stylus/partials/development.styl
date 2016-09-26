@@ -1,0 +1,388 @@
+#main
+	overflow hidden
+
+.machine_btn
+	position absolute
+	right 35px
+	top 40px
+	display block
+	cursor pointer
+	transition .2s ease-in-out
+	z-index 9
+	svg
+		width 38px
+		height 39px
+		margin 10px 8px
+.machine_btn.black
+	svg
+		path
+			fill black
+.home_btn
+	width 60px
+	height 60px
+	position fixed
+	left 60px
+	top 22px
+	z-index 2
+	display block
+	&:hover
+		opacity 1
+	svg
+		width 23px
+		height 23px
+		margin 19px
+		transition .25s ease-in-out
+		rect
+			fill white
+
+.home_btn.black
+	svg
+		rect
+			fill black
+
+.home_btn:hover
+	svg
+		transform scale(1.2)
+
+.main
+	display flex
+	flex-wrap wrap
+	align-content flex-end
+	.item
+		padding 40px
+		flex-grow 1
+		transition .2s ease-in-out;
+		// &:hover
+		// 	transform translateY(-5px)
+		// 	box-shadow 0 10px 10px rgba(50,55,55,.5)
+		// 	z-index 2
+		&:nth-of-type(1)
+			min-height 50vh
+.main.home
+	padding 2% 2% 0 2%
+
+.text
+	width 100%
+	padding 80px 0
+	font-size 1.1em
+	ul
+		list-style-type square
+		padding-left 3em
+		margin 0 0 2.14285714285714em
+		li
+			margin 0 0 0.785714em
+			line-height 1.571428571428571;
+			font-size 1.3125em
+
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	ul
+		max-width 800px
+		margin-left auto
+		margin-right auto
+		text-transform none
+	p
+		font-family 'merriweatherlight', serif
+		color #333
+		strong
+			font-family 'brandon_textbold', sans-serif
+
+	// p:nth-of-type(1)
+	// 	font-family: inherit
+	// 	color #7F6C6C
+	// 	font-size 1.6em
+	figure
+		margin 80px auto 60px
+		width 80%
+		figcaption
+			color mediumgrey
+			display inline-block
+			padding 2em 0
+	img
+		width 100%
+	figure.full
+		width 100%
+		figcaption
+			padding 2em
+
+
+.machine-menu
+	position fixed
+	width 100%
+	height 100vh
+	right 0
+	top 0
+	background-color #fc7d7d
+	z-index 3
+	transition transform .2s ease-in-out
+	transform-origin top right
+	.machine-grid
+		display flex
+		flex-wrap wrap
+		align-content flex-end
+		a
+			width 30.66%
+			margin 0 0 2% 2%
+			flex-grow 1
+		li
+			display inline-block
+
+.machine-menu.closed
+	transform scale(0)
+.machine-menu.open
+	transform scale(1)
+.machine-grid
+	height 100%
+	width 100%
+	padding-top 2%
+	display flex
+	flex-wrap wrap
+	align-content flex-end
+	a
+		transition .25s ease-in-out
+		width 30.66%
+		margin 0 0 2% 2%
+		&:hover
+			transform translateY(-5px)
+			box-shadow 0 10px 10px rgba(50,55,55,.5)
+			z-index 2
+	.machineThumb
+		text-align center
+		padding 50px
+		display inline-block
+		.machineLink
+			position absolute
+			left 0
+			top 0
+			right 0
+			bottom 0
+		figure
+			margin 0 0 30px 0
+		img
+			max-width 60%
+			transition transform .2s ease-in-out
+			transform-origin bottom center
+		&:hover
+			img
+				transform scale(1.1)
+
+.sitemap
+	width 100%
+	background-color #F0F0F0;
+	padding 50px 150px
+	.inner
+		margin auto
+		font-size .875em
+		h2
+			text-transform none
+			margin-bottom .2em
+
+.viewArt
+	font-size 3em
+	margin-bottom 0
+	text-align right
+
+footer
+	padding 30px 150px
+	float left
+	width 100%
+	border-top 1px solid white
+	z-index 3
+	position relative
+	p
+		margin 0
+		opacity .5
+		font-size 1em
+	svg
+		stroke none
+	// p
+	// 	position absolute
+	// 	right 150px
+	// 	top 50%;
+	// 	transform translateY(-50%);
+	svg
+		max-width 150px
+		float left
+		opacity .6
+	.st0
+		fill black
+	.st1
+		fill white
+
+.projects
+	width 100%
+	float left
+	.grid-sizer
+		width 25%
+		height 35vh
+	.projectItem
+		position relative
+		width 25%
+		height 40vh
+		opacity 1
+		list-style none
+		color white
+		background-size cover
+		background-position center center
+		h1
+			font-size 1.6em
+		&:nth-of-type(3n + 1)
+			width 50%
+			height 60vh
+		.btn-2
+			margin-right 5px
+			font-size .875em
+			border 3px solid white !important
+		div
+			width 100%
+			height 100%
+			opacity 0
+			padding 40px
+			transition opacity .2s ease-in-out
+			font-size .875em
+			background rgba(projectColor, .9)
+			.btn
+				margin-bottom 20px
+			&:hover
+				opacity 1
+
+
+.sectionHeader
+	text-align center
+	padding 8% 10%
+	width 100%
+	h1
+		text-transform none
+		color #fc7d7d
+		-webkit-hyphens none
+		-moz-hyphens none
+		-ms-hyphens none
+		hyphens none
+
+#projectHeader:after
+	position absolute
+	width 100%
+	content ""
+	height 100%
+	background rgba(0, 0, 0, .5)
+
+.page_footer
+	background projectColor
+	width 100%
+	padding 50px
+	text-align center
+
+.booking_reservering
+	width 100%
+	background-color projectColor
+	padding 4%
+	text-align center
+	h1
+		border 6px solid projectColor
+		display block
+		padding 30px
+		color projectColor
+		max-width 800px
+		margin auto
+		text-align center
+
+.newsletter
+	background #f2f2f2
+	#mc_embed_signup
+		width 100%
+		margin auto
+		background projectColor
+		max-width 600px
+		transition .2s ease-in-out
+		&:hover
+			transform translateY(-10px)
+			box-shadow 0 10px 10px rgba(50,55,55,.5)
+		input
+			width 100%
+			background transparent
+			color white
+			border-bottom 4px solid white
+			padding .5em .8em .2em
+			margin-bottom 1em
+			&:focus
+				border-bottom 4px solid white
+
+
+.logo_bar
+	z-index 2
+	li
+		display inline-block
+		float left
+		width 60px
+		height 60px
+		margin-left 10px
+		transition .2s ease-in-out
+		opacity .8
+		&:hover
+			opacity 1
+			transform scale(1.2)
+header
+	position relative
+
+.waag__icon
+	width 2.1em
+	height 2.1em
+	// position absolute
+	// right 120px
+	// bottom 80px
+	margin-right .2em
+	z-index 9
+	path
+		fill white
+
+.waag__icon__absolute
+	width 5em
+	height 5em
+	position absolute
+	right 120px
+	bottom 80px
+	z-index 9
+	path
+		fill white
+
+.thumbheader
+	background-size cover
+	position absolute
+	background-repeat no-repeat
+	background-position center center
+	height 100%
+	width 100%
+	left 0
+	top 0
+	transition .6s ease-in-out
+	&:before
+		position absolute
+		width 100%
+		height 100%
+		content ""
+		background-color inherit;
+		opacity .9
+		transition .6s ease-in-out
+
+.item
+	overflow hidden
+	&:hover
+		.thumbheader
+			transform scale(1.5)
+			&:before
+					background-color inherit;
+					opacity .4
+
+::-webkit-input-placeholder
+	color: white
+::-moz-placeholder
+	color white
+:-ms-input-placeholder
+	color white
+:-moz-placeholder
+	color white

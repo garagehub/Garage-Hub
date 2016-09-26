@@ -1,0 +1,106 @@
+.noScroll
+  overflow hidden
+.slide-menu
+  position fixed
+  left 0
+  top 0
+  height 100vh
+  max-width 50vw
+  background rgba(#36BFBC, .97)
+  box-shadow 5px 5px 8px rgba(#000, .2)
+  color white
+  padding 80px 50px 80px 80px
+  z-index 4
+  font-size 3em
+  font-family 'BalanceComp-bold', 'brandon_textbold', sans-serif
+  transition transform .15s ease-out
+  transform-origin top left
+  overflow auto
+  ul.mainMenu
+    li
+      a
+        color canvas
+        text-transform uppercase
+        padding 10px 20px
+        display inline-block
+        margin 4px
+        &:hover
+          border 4px solid white
+          margin 0
+          background #fc7d7d;
+
+.slide-menu.closed
+  transform translateX(-100%)
+.slide-menu.open
+  transform translateX(0%)
+
+.slide-menu.top
+  width 100vw
+.slide-menu.top.closed
+  transform translateY(-100%)
+
+.slide-menu.top.open
+  transform translateY(0%)
+
+.hamburger-menu
+  top 40px
+  left 2%
+  z-index 9
+  box-sizing border-box
+  width 20px
+  height 25px
+  position fixed
+  transform rotate(0deg)
+  cursor pointer
+  &:hover
+    .habmburer__inner
+      span
+        transform scale (2)
+  .habmburer__inner
+    span
+      display block
+      position absolute
+      height 3px
+      width 30px
+      background white
+      opacity 1
+      left 0
+      transform rotate(0deg)
+      transition transform .25s ease-in-out, top .25s ease-in-out, left .25s ease-in-out, width .25s ease-in-out, opacity .25s ease-in-out
+.hamburger-menu.black
+  .habmburer__inner
+    span
+      background black
+.hamburger-menu.open
+  z-index 9
+
+.hamburger-menu span:nth-child(1)
+  top 0px
+  transform-origin left center
+
+
+.hamburger-menu span:nth-child(2)
+  top 11px
+  transform-origin left center
+
+.hamburger-menu span:nth-child(3)
+  top 22px
+  transform-origin left center
+
+.open span:nth-child(1)
+  transform rotate(45deg)
+  top 3px
+  left 5px
+
+.hamburger-menu.open span:nth-child(2)
+  width 0%
+  opacity 0
+
+.hamburger-menu.open span:nth-child(3)
+  transform rotate(-45deg)
+  top 24px
+  left 6px
+
+.hamburger-menu.open
+  span
+    background canvas

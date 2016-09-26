@@ -1,0 +1,111 @@
+.header
+	height 99vh
+	width 100%
+	background-size cover
+	background-position center center
+	background-attachment fixed
+	.down_btn
+		width 70px
+		height 70px
+		// position absolute
+		// right 80px
+		// bottom 80px
+		cursor pointer
+		z-index 2
+		transition .2s ease-out
+		circle,
+		polyline
+			fill transparent
+			stroke rgba(255,255,255,1)
+			stroke-width 3
+		&:hover
+			transform scale(1.1)
+
+			a
+				position absolute
+				width 100%
+				height 100%
+				svg
+					width 100%
+				path,
+				.st0
+					fill white
+		li:nth-of-type(1)
+			&:hover
+				opacity .5
+				transform scale(1)
+
+	.logo_hover
+		position absolute
+		height 100%
+		width 100%
+		z-index 2
+		background white
+		opacity 0
+		h1
+			position absolute
+			left 50%
+			top 50%
+			transform translate(-50%, -50%)
+	.headerSign
+		color white
+		font-size 1.8em
+		transform-origin left bottom
+		display inline-block
+		position absolute
+		left 120px
+		bottom 80px
+		max-width 1000px
+		z-index 2
+		// text-shadow 3px 3px 8px rgba(0,0,0,.1)
+		h1
+			left -.07em
+			margin-bottom 0
+		h1,
+		h2
+			margin-bottom 0
+			opacity .8
+		p
+			margin-bottom 0
+			font-size .875em
+			top -.2em
+		h2
+			font-family 'brandon_textlight', sans-serif
+			border-bottom 1px solid rgba(255,255,255, .6)
+			display inline-block
+			margin-bottom .1em
+			top -.3em
+			font-size 1em
+		p
+			opacity .8
+			margin-bottom .1em
+
+
+
+.social_bar
+	z-index 2
+	li
+		display inline-block
+		float left
+		width 20px
+		height 30px
+		margin-left 24px
+		transition .2s ease-in-out
+		opacity .8
+		&:hover
+			opacity 1
+			transform scale(1.2)
+		a
+			position absolute
+			width 100%
+			height 100%
+			padding 0 !important
+			svg
+				width 100%
+			path,
+			.st0
+				fill white
+	li:nth-of-type(1)
+		&:hover
+			opacity 1
+			transform scale(1.2)

@@ -1,0 +1,17 @@
+Title: Fablab Amsterdam
+
+----
+
+Author: Waag Society
+
+----
+
+Description: Fablab Amsterdam website
+
+----
+
+Keywords: Fablab,Amsterdam,Maker
+
+----
+
+Copyright: 2016, CC-BY-NC-SA
